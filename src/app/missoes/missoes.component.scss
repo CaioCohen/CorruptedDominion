@@ -1,0 +1,30 @@
+.bloco{
+    background-color: #ffcc66;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.missao:hover{
+    .texto{
+        display: inline;
+    }
+    .mission{
+        height: 400px;
+    }
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-family: Cursive;
+  }
+
+.mission{
+    height: 300px;
+}
