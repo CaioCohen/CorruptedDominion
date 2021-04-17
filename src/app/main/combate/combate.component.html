@@ -1,0 +1,51 @@
+<div class="bloco">
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Iniciativa</th>
+            <th>PV</th>
+            <th>Dano</th>
+            <th>PV temporario</th>
+        </tr>
+        <tr *ngFor="let personagem of character; let i = index">
+            <td style="width: 30%;">{{personagem.nome}}</td>
+            <td style="width: 10%;">{{personagem.iniciativa}}</td>
+            <td style="width: 10%;">{{personagem.pv}}</td>
+            <td class="tdChangable">{{personagem.dano}} 
+                <input type="number" class="changeStats" [(ngModel)]="dano">
+                <button class="btn btn-primary addStats" (click)="addStats(i, 1)">+</button>
+            </td>
+            <td class="tdChangable">{{personagem.pvTemp}} 
+                <input type="number" class="changeStats" [(ngModel)]="pvTemp">
+                <button class="btn btn-primary addStats" (click)="addStats(i, 2)">+</button>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <div class="row" id="formAdd">
+          <div class="col-md-3">
+            <label>Nome</label>
+            <input type="text" class="form-control" [(ngModel)]="char.nome" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="col-md-3">
+            <label>Iniciativa</label>
+            <input type="number" class="form-control" [(ngModel)]="char.iniciativa" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="col-md-2">
+            <label>Pv</label>
+            <input type="number" class="form-control" [(ngModel)]="char.pv" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="col-md-2">
+            <label>Dano</label>
+            <input type="number" class="form-control" [(ngModel)]="char.dano" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="col-md-2">
+            <label>Pv Temporario</label>
+            <input type="number" class="form-control" [(ngModel)]="char.pvTemp" [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+        <div id="addCharButton">
+            <button class="btn btn-primary" (click)="addNewChar()">Add new character</button>
+        </div>
+      </form>
+</div>

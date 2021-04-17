@@ -8,21 +8,21 @@
 }
 
 .missao:hover{
+    text-align: center;
     .texto{
         display: inline;
     }
-    .mission{
-        height: 400px;
-    }
+
 }
 
 .texto {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: none;
     font-family: Cursive;
+    width: 50%;
   }
 
 .mission{

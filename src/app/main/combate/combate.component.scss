@@ -1,0 +1,44 @@
+.bloco{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.changeStats{
+  width: 25%;
+}
+
+.addStats{
+  margin-left: 10px;
+}
+
+.tdChangable{
+  width: 25%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #addCharButton{
+    text-align: center;
+    padding: 10px;
+  }
+
+  #formAdd{
+    padding: 10px;
+  }
