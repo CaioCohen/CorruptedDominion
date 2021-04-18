@@ -12,11 +12,11 @@
             <td style="width: 10%;">{{personagem.iniciativa}}</td>
             <td style="width: 10%;">{{personagem.pv}}</td>
             <td class="tdChangable">{{personagem.dano}} 
-                <input type="number" class="changeStats" [(ngModel)]="dano">
+                <input type="number" class="changeStats" [(ngModel)]="dano[i]">
                 <button class="btn btn-primary addStats" (click)="addStats(i, 1)">+</button>
             </td>
             <td class="tdChangable">{{personagem.pvTemp}} 
-                <input type="number" class="changeStats" [(ngModel)]="pvTemp">
+                <input type="number" class="changeStats" [(ngModel)]="pvTemp[i]">
                 <button class="btn btn-primary addStats" (click)="addStats(i, 2)">+</button>
             </td>
         </tr>
@@ -46,6 +46,7 @@
         </div>
         <div id="addCharButton">
             <button class="btn btn-primary" (click)="addNewChar()">Add new character</button>
+            <button class="btn btn-danger" (click)="deleteTable()">Create new table</button>
         </div>
       </form>
 </div>

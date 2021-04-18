@@ -1,11 +1,18 @@
 .bloco{
     background-color: #ffcc66;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-right:10%;
     margin-top: 10px;
     position: relative;
     text-align: center;
 }
+
+@media only screen and (max-width: 750px) {
+    .bloco {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  }
 
 .missao:hover{
     text-align: center;
@@ -22,7 +29,7 @@
     transform: translate(-50%, -50%);
     display: none;
     font-family: Cursive;
-    width: 50%;
+    width: 45%;
   }
 
 .mission{
