@@ -1,0 +1,78 @@
+.bloco{
+    background-color: rgb(0,0,0,.7);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.card{
+    width: 160px;
+    height: 210px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #800000;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after{
+    content: "DD";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0,0,0,0.1);
+}
+
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card .imgBx img{
+    max-width: 100%;
+    transition: 0.5s;
+    margin-top: -10%;
+}
+
+.card:hover .imgBx img{
+    max-width: 120%;
+
+}
+
+.card .contentBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+.card:hover .contentBx{
+    max-width: 120%;
+    font-size: 200%;
+}
