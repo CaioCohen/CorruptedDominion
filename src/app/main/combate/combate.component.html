@@ -12,7 +12,7 @@
             <td style="width: 10%;">{{personagem.iniciativa}}</td>
             <td style="width: 10%;">{{personagem.pv}}</td>
             <td class="tdChangable">{{personagem.dano}} 
-                <input type="number" class="changeStats" [(ngModel)]="dano[i]">
+                <input type="number" class="changeStats" id="dano" [(ngModel)]="dano[i]">
                 <button class="btn btn-primary addStats" (click)="addStats(i, 1)">+</button>
             </td>
             <td class="tdChangable">{{personagem.pvTemp}} 

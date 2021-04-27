@@ -6,8 +6,22 @@
     position: relative;
 }
 
+@media only screen and (max-width: 750px) {
+  .bloco{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+ }
+
 .changeStats{
   width: 25%;
+}
+
+@media only screen and (max-width: 750px) {
+  #dano{
+    width: 50% !important;
+  }
 }
 
 .addStats{
