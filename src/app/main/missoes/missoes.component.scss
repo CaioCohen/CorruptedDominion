@@ -6,11 +6,18 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 991px) {
     .bloco {
       margin-left: 0;
       margin-right: 0;
     }
+
+   .missao{
+
+    .texto{
+      display: inline;
+    }
+   }
 
   }
 
@@ -18,6 +25,7 @@
     text-align: center;
     .texto{
         display: inline;
+        font-size: 90%;
     }
 
 }

@@ -29,6 +29,10 @@ export class CombateComponent implements OnInit {
     }
   }
 
+  deleteChar(index: number){
+    this.character.splice(index, 1);
+  }
+
   addStats(index: number, stat: number){
     if(stat == 1){
       this.character[index].dano += this.dano[index];
