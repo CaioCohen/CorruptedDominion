@@ -1,5 +1,5 @@
 <div class="bloco">
-    <div *ngIf="mob">
+    <div *ngIf="mob" class="mob-selector">
         <label for="char">Personagem</label>
         <select name="char" id="chars" (change)="getMob(selector.value)" [(ngModel)]="charId" #selector>
             <option value="-1">Escolha</option>
@@ -24,27 +24,31 @@
                     <td>{{obj.peso}}</td>
                     <td>{{obj.valor}}</td>
                     <td>{{obj.quantidade}}</td>
-                    <td><button class="btn btn-danger">-</button></td>
+                    <td><button class="btn btn-danger" (click)="delete(i)">-</button></td>
                 </tr>
             </table>
             <form class="add">
                 <div class="form-row">
                   <div class="col-md-5 form-itens">
-                    <input type="text" class="form-control" placeholder="Item">
+                    <input type="text" class="form-control" placeholder="Item" [(ngModel)]="inventario.item" [ngModelOptions]="{standalone: true}">
                   </div>
                   <div class="col-md-2 form-itens">
-                  <input type="text" class="form-control" placeholder="Peso">
+                  <input type="text" class="form-control" placeholder="Peso" [(ngModel)]="inventario.peso" [ngModelOptions]="{standalone: true}">
                   </div>
                   <div class="col-md-2 form-itens">
-                    <input type="text" class="form-control" placeholder="Valor">
+                    <input type="text" class="form-control" placeholder="Valor" [(ngModel)]="inventario.valor" [ngModelOptions]="{standalone: true}">
                   </div>
                   <div class="col-md-2 form-itens">
-                    <input type="number" class="form-control" placeholder="Quantidade">
+                    <input type="number" class="form-control" placeholder="Quantidade" [(ngModel)]="inventario.quantidade" [ngModelOptions]="{standalone: true}">
                   </div>
                   <div class="col-md-1 form-itens butao">
-                    <button class="btn btn-primary">+</button>
+                    <button class="btn btn-primary" (click)="addItem()">+</button>
                   </div>
                 </div>
               </form>
+              <div style="text-align: center;">
+                <button class="btn btn-primary" (click)="update()">Salvar</button>
+              </div>
+
       </div>
 </div>

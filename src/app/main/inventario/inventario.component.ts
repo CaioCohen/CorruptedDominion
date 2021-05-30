@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {InvService} from '../../services/inv.service';
 import {Personagem} from '../../models/personagem';
+import {Inventario} from '../../models/personagem';
 
 @Component({
   selector: 'app-inventario',
@@ -10,7 +11,21 @@ import {Personagem} from '../../models/personagem';
 export class InventarioComponent implements OnInit {
 
   chars: Personagem[] = [];
-  personagem: any;
+  personagem: Personagem = {
+    "nome": "",
+    "inventario": [{
+      "item": "",
+      "peso": "",
+      "quantidade": 0,
+      "valor": ""
+  }]};
+
+  inventario: Inventario = {
+    "item": "",
+    "peso": "",
+    "quantidade": 0,
+    "valor": ""
+};
   loaded: boolean = false;
   mob: boolean = false;
   charId: number = -1;
@@ -33,16 +48,19 @@ export class InventarioComponent implements OnInit {
         var char = sessionStorage.getItem('char');
         if(char == "Jorgus"){
           this.personagem = this.chars[0];
-          console.log("alo");
+          this.charId = 0;
         }
         else if(char == "Siddartha"){
           this.personagem = this.chars[1];
+          this.charId = 1;
         }
         else if(char == "Drezig"){
           this.personagem = this.chars[2];
+          this.charId = 2;
         }
         else if(char == "Yulia"){
           this.personagem = this.chars[3];
+          this.charId = 3;
         }
       }
       console.log(this.chars);
@@ -58,6 +76,18 @@ export class InventarioComponent implements OnInit {
       console.log(this.chars);
       this.loaded = true;
     });
+  }
+
+  delete(index:number){
+    this.personagem.inventario.splice(index, 1);
+  };
+
+  addItem(){
+    this.personagem.inventario.push(this.inventario);
+  }
+
+  update(){
+    this.service.edit(this.charId,this.personagem.inventario).subscribe(response => alert("inventario salvo"));
   }
 
 }
