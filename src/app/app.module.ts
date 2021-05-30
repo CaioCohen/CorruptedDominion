@@ -5,6 +5,7 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { BsModalRef, BsModalService, ModalModule } from 'ngx-bootstrap/modal';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { MapasComponent } from './main/mapas/mapas.component';
 import { SessoesComponent } from './main/sessoes/sessoes.component';
 import { CombateComponent } from './main/combate/combate.component';
 import { IbexCatalogComponent } from './main/ibex-catalog/ibex-catalog.component';
+import { InventarioComponent } from './main/inventario/inventario.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { IbexCatalogComponent } from './main/ibex-catalog/ibex-catalog.component
     MapasComponent,
     SessoesComponent,
     CombateComponent,
-    IbexCatalogComponent
+    IbexCatalogComponent,
+    InventarioComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { IbexCatalogComponent } from './main/ibex-catalog/ibex-catalog.component
     NgxBootstrapIconsModule.pick(allIcons),
     BrowserAnimationsModule,
     AccordionModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

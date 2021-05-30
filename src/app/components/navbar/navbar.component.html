@@ -23,7 +23,23 @@
         </li>
         <li>
           <a class="nav-link link-custom" routerLink="combate">Combate</a>
-      </li>
+        </li>
+        <li *ngIf="!charSelected">
+          <div class="dropdown">
+            <button class="dropdown-toggle drop-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Personagem
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" (click)="setChar(0)">Jorgus</a>
+              <a class="dropdown-item" (click)="setChar(1)">Sidhartta</a>
+              <a class="dropdown-item" (click)="setChar(2)">Drezig</a>
+              <a class="dropdown-item" (click)="setChar(3)">Yulia</a>
+            </div>
+          </div>
+        </li>
+        <li *ngIf="charSelected">
+          <a class="nav-link link-custom" routerLink="inventario">{{char}}</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -73,7 +89,13 @@
               COMBATE
             </button>
           </div>
-          <div class="col-12 pl-2 mb-3 modal-item">
+          <div class="col-6 pl-2 mb-3 modal-item">
+            <button type="button" class="list-group-item list-group-item-action" routerLink="inventario" (click)="invMob()">
+              <i-bs name="hurricane" width="1.5rem" height="1.5rem"></i-bs><br>
+              INVENTARIO
+            </button>
+          </div>
+          <div class="col-6 pl-2 mb-3 modal-item">
             <button type="button" class="list-group-item list-group-item-action" (click)="decline()">
               <i-bs name="door-open" width="1.5rem" height="1.5rem"></i-bs><br>
               Fechar

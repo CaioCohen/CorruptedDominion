@@ -1,0 +1,50 @@
+<div class="bloco">
+    <div *ngIf="mob">
+        <label for="char">Personagem</label>
+        <select name="char" id="chars" (change)="getMob(selector.value)" [(ngModel)]="charId" #selector>
+            <option value="-1">Escolha</option>
+            <option value="0">Jorgus</option>
+            <option value="1">Sidhartta</option>
+            <option value="2">Drezig</option>
+            <option value="3">Yulia</option>
+        </select>
+    </div>
+    <h1 class="header" *ngIf="loaded">{{personagem.nome}}</h1>
+    <div class="table-responsive" *ngIf="loaded">
+        <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Peso</th>
+                    <th>Valor</th>
+                    <th>Quantidade</th>
+                    <th></th>
+                </tr>
+                <tr *ngFor="let obj of personagem.inventario; let i = index">
+                    <td>{{obj.item}}</td>
+                    <td>{{obj.peso}}</td>
+                    <td>{{obj.valor}}</td>
+                    <td>{{obj.quantidade}}</td>
+                    <td><button class="btn btn-danger">-</button></td>
+                </tr>
+            </table>
+            <form class="add">
+                <div class="form-row">
+                  <div class="col-md-5 form-itens">
+                    <input type="text" class="form-control" placeholder="Item">
+                  </div>
+                  <div class="col-md-2 form-itens">
+                  <input type="text" class="form-control" placeholder="Peso">
+                  </div>
+                  <div class="col-md-2 form-itens">
+                    <input type="text" class="form-control" placeholder="Valor">
+                  </div>
+                  <div class="col-md-2 form-itens">
+                    <input type="number" class="form-control" placeholder="Quantidade">
+                  </div>
+                  <div class="col-md-1 form-itens butao">
+                    <button class="btn btn-primary">+</button>
+                  </div>
+                </div>
+              </form>
+      </div>
+</div>

@@ -19,3 +19,9 @@
     text-shadow: 0 0 2px rgb(100, 98, 98);
     font-size: 150%;
 }
+
+@media only screen and (max-width: 750px){
+    .bloco{
+        margin: 10px 0;
+    }
+}

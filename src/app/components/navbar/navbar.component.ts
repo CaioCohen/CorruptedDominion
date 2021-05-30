@@ -9,10 +9,16 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 export class NavbarComponent implements OnInit {
 
   modalRef: BsModalRef | undefined;
+  charSelected: boolean = false;
+  char: any;
 
   constructor(private modalService: BsModalService) { }
 
   ngOnInit(): void {
+    if('char' in sessionStorage){
+      this.char = sessionStorage.getItem('char');
+      this.charSelected = true;
+    }
   }
 
   openModal(template: TemplateRef<any>) {
@@ -24,6 +30,33 @@ export class NavbarComponent implements OnInit {
     if(this.modalRef != undefined){
       this.modalRef.hide();
     }
+  }
+
+  setChar(id: number){
+    switch(id){
+      case 0:{
+        sessionStorage.setItem('char', 'Jorgus');
+        break;
+      }
+      case 1:{
+        sessionStorage.setItem('char', 'Siddartha');
+        break;
+      }
+      case 2:{
+        sessionStorage.setItem('char', 'Drezig');
+        break;
+      }
+      case 3:{
+        sessionStorage.setItem('char', 'Yulia');
+        break;
+      }
+    }
+    window.location.reload();
+  }
+
+  invMob(){
+    sessionStorage.setItem("mobile", "yes");
+    this.decline();
   }
 
 }

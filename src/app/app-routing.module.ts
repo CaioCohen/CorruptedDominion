@@ -6,6 +6,7 @@ import { NpcsComponent } from './main/npcs/npcs.component';
 import {MapasComponent} from './main/mapas/mapas.component';
 import { SessoesComponent } from './main/sessoes/sessoes.component';
 import { CombateComponent } from './main/combate/combate.component';
+import { InventarioComponent } from './main/inventario/inventario.component';
 import { IbexCatalogComponent } from './main/ibex-catalog/ibex-catalog.component';
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'mapas', component: MapasComponent },
   { path: 'sessoes', component: SessoesComponent },
   { path: 'combate', component: CombateComponent },
-  { path: 'mapas/ibexcatalog', component: IbexCatalogComponent }
+  { path: 'mapas/ibexcatalog', component: IbexCatalogComponent },
+  { path: 'inventario', component: InventarioComponent }
 ];
 
 @NgModule({
