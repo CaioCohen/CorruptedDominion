@@ -24,8 +24,16 @@ h3{
     margin: 10px;
    }
 
+   h3{
+    font-size: 10vw;
+    }
+
    .item{
        width: auto;
+   }
+
+   .card .imgBx img{
+       margin-top: 0 !important;
    }
 
   }
@@ -44,6 +52,13 @@ h3{
 .card:hover::before{
     top: -70%;
     transform: skewY(390deg);
+}
+
+@media only screen and (max-width: 750px) {
+    .card:hover::before{
+        top: -50%;
+        transform: skewY(345deg);
+    }
 }
 
 .card::after{
