@@ -18,6 +18,9 @@ import { SessoesComponent } from './main/sessoes/sessoes.component';
 import { CombateComponent } from './main/combate/combate.component';
 import { IbexCatalogComponent } from './main/ibex-catalog/ibex-catalog.component';
 import { InventarioComponent } from './main/inventario/inventario.component';
+import { PavilhaoComponent } from './main/pavilhao/pavilhao.component';
+import { SegundoAndarComponent } from './main/pavilhao/segundo-andar/segundo-andar.component';
+import { TerceiroAndarComponent } from './main/pavilhao/terceiro-andar/terceiro-andar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { InventarioComponent } from './main/inventario/inventario.component';
     SessoesComponent,
     CombateComponent,
     IbexCatalogComponent,
-    InventarioComponent
+    InventarioComponent,
+    PavilhaoComponent,
+    SegundoAndarComponent,
+    TerceiroAndarComponent
   ],
   imports: [
     BrowserModule,

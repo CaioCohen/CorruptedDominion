@@ -1,0 +1,35 @@
+.bloco{
+    background-color: rgb(0,0,0,.7);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.andar{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 3vw;
+    margin: 10px 0;
+}
+
+.andar:hover{
+    box-shadow: 0 0 10px white;
+}
+
+@media only screen and (max-width: 750px) {
+    .bloco {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+
+    .andar{
+        font-size: 10vw;
+    }
+
+  }
+

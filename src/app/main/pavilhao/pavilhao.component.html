@@ -1,0 +1,15 @@
+<div class="bloco">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <button class="andar" (click)="andar(2)">2°Andar</button>
+            </div>
+            <div class="col-6">
+                <button class="andar" (click)="andar(3)">3°Andar</button>
+            </div>
+        </div>
+    </div>
+    <segundo-andar *ngIf="floor == 2"></segundo-andar>
+    <terceiro-andar *ngIf="floor == 3"></terceiro-andar>
+
+</div>

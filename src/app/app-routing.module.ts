@@ -8,6 +8,7 @@ import { SessoesComponent } from './main/sessoes/sessoes.component';
 import { CombateComponent } from './main/combate/combate.component';
 import { InventarioComponent } from './main/inventario/inventario.component';
 import { IbexCatalogComponent } from './main/ibex-catalog/ibex-catalog.component';
+import { PavilhaoComponent } from './main/pavilhao/pavilhao.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'sessoes', component: SessoesComponent },
   { path: 'combate', component: CombateComponent },
   { path: 'mapas/ibexcatalog', component: IbexCatalogComponent },
-  { path: 'inventario', component: InventarioComponent }
+  { path: 'inventario', component: InventarioComponent },
+  { path: 'mapas/pavilhao', component: PavilhaoComponent }
 ];
 
 @NgModule({
