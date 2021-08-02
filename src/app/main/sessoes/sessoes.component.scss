@@ -6,6 +6,11 @@
     position: relative;
 }
 
+.link{
+    color: lightseagreen;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 750px){
     .bloco{
         margin: 10px 0;

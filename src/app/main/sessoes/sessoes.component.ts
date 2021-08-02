@@ -12,4 +12,8 @@ export class SessoesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  alerta(mensagem: string){
+    alert(mensagem);
+  }
+
 }
