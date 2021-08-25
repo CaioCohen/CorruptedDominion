@@ -21,6 +21,7 @@ import { InventarioComponent } from './main/inventario/inventario.component';
 import { PavilhaoComponent } from './main/pavilhao/pavilhao.component';
 import { SegundoAndarComponent } from './main/pavilhao/segundo-andar/segundo-andar.component';
 import { TerceiroAndarComponent } from './main/pavilhao/terceiro-andar/terceiro-andar.component';
+import { LoresComponent } from './main/lores/lores.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TerceiroAndarComponent } from './main/pavilhao/terceiro-andar/terceiro-
     InventarioComponent,
     PavilhaoComponent,
     SegundoAndarComponent,
-    TerceiroAndarComponent
+    TerceiroAndarComponent,
+    LoresComponent
   ],
   imports: [
     BrowserModule,
