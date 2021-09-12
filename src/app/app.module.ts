@@ -22,6 +22,9 @@ import { PavilhaoComponent } from './main/pavilhao/pavilhao.component';
 import { SegundoAndarComponent } from './main/pavilhao/segundo-andar/segundo-andar.component';
 import { TerceiroAndarComponent } from './main/pavilhao/terceiro-andar/terceiro-andar.component';
 import { LoresComponent } from './main/lores/lores.component';
+import { PrimariosComponent } from './main/npcs/primarios/primarios.component';
+import { SecundariosComponent } from './main/npcs/secundarios/secundarios.component';
+import { AleatoriosComponent } from './main/npcs/aleatorios/aleatorios.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { LoresComponent } from './main/lores/lores.component';
     PavilhaoComponent,
     SegundoAndarComponent,
     TerceiroAndarComponent,
-    LoresComponent
+    LoresComponent,
+    PrimariosComponent,
+    SecundariosComponent,
+    AleatoriosComponent
   ],
   imports: [
     BrowserModule,

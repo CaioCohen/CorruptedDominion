@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NpcsComponent implements OnInit {
 
+  npcPriority: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  page(n: number){
+    this.npcPriority = n;
   }
 
 }

@@ -17,29 +17,12 @@
     margin: 10px;
 }
 
-.botao{
-    border: 1px solid white;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    font-size: 3vw;
-    margin: 10px 0;
-}
-
-.botao:hover{
-    box-shadow: 0 0 10px white;
-}
-
 @media only screen and (max-width: 750px) {
     .card {
         margin: 0;
     }
 
-    .botao{
-        font-size: 10vw;
-    }
-
-}
+  }
 
 .card-body{
     overflow:scroll;
