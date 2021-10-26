@@ -1,0 +1,106 @@
+.card{
+    width: 160px;
+    height: 210px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 1.5vw;
+}
+
+.imgBx{
+    img{
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+   .card{
+    width: 320px;
+    height: 420px;
+    margin: 10px;
+   }
+
+   h3{
+    font-size: 10vw;
+    }
+
+   .item{
+       width: auto;
+   }
+
+   .card .imgBx img{
+       margin-top: 0 !important;
+   }
+
+  }
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #800000;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+@media only screen and (max-width: 750px) {
+    .card:hover::before{
+        top: -50%;
+        transform: skewY(345deg);
+    }
+}
+
+.card::after{
+    content: "DD";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0,0,0,0.1);
+}
+
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card .imgBx img{
+    max-width: 100%;
+    transition: 0.5s;
+    margin-top: -10%;
+}
+
+.card:hover .imgBx img{
+    max-width: 120%;
+
+}
+
+.card .contentBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+.card:hover .contentBx{
+    max-width: 120%;
+    font-size: 200%;
+}

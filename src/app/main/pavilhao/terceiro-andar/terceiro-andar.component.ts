@@ -12,4 +12,8 @@ export class TerceiroAndarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  pop(mensagem: string){
+    alert(mensagem);
+  }
+
 }
