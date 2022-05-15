@@ -60,7 +60,6 @@ export class CombateComponent implements OnInit {
       let charTemp: Character[] = [];
       for(let i = 0; i < this.character.length; i++){
         if(this.char.iniciativa > this.character[i].iniciativa){
-          console.log("alo");
           for(let j = 0; j < i; j++){
             charTemp.push(this.character[j]);
           }
@@ -83,7 +82,6 @@ export class CombateComponent implements OnInit {
 
     else{
           this.character.push(this.char);
-          console.log(this.character.length);
     }
     this.char =  {
       "nome": "",
