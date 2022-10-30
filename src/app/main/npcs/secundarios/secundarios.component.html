@@ -1,106 +1,112 @@
 <div class="row d-flex justify-content-center">
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Albert.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Albert</h3>
-            <p class="card-text">Atendente do pavilhão da forja mágica, ajuda o demonio da forja com o que pode, mas não
-                é ferreiro</p>
+    <ng-container *ngIf="campanha == 'CD'">
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Albert.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Albert</h3>
+                <p class="card-text">Atendente do pavilhão da forja mágica, ajuda o demonio da forja com o que pode, mas não
+                    é ferreiro</p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/GerenteSophia.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Sophia</h3>
-            <p class="card-text">Gerente da guilda dos aventureiros, ela que entrega as recompensas e é com ela que se
-                deve falar se quiser subir de rank</p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/GerenteSophia.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Sophia</h3>
+                <p class="card-text">Gerente da guilda dos aventureiros, ela que entrega as recompensas e é com ela que se
+                    deve falar se quiser subir de rank</p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Henrich.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Henrich Cithin</h3>
-            <p class="card-text">
-                Filho do Rei, o Henrich, conhecido entre os aventureiros como o "aventureiro de ferro", resolveu que
-                queria virar aventureiro, com a autoridade e capital do seu pai, comprou o titulo de aventureiro de
-                prata.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Henrich.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Henrich Cithin</h3>
+                <p class="card-text">
+                    Filho do Rei, o Henrich, conhecido entre os aventureiros como o "aventureiro de ferro", resolveu que
+                    queria virar aventureiro, com a autoridade e capital do seu pai, comprou o titulo de aventureiro de
+                    prata.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Zabarin.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Zabarin</h3>
-            <p class="card-text">
-                Arch-Mago formado na Universidade do Amanhecer, trabalha atualmente em sua própria biblioteca na capital
-                Yevine. Possui uma ótima memória pra se lembrar de assuntos arcanos, mas não muito pra qualquer outro
-                assunto.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Zabarin.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Zabarin</h3>
+                <p class="card-text">
+                    Arch-Mago formado na Universidade do Amanhecer, trabalha atualmente em sua própria biblioteca na capital
+                    Yevine. Possui uma ótima memória pra se lembrar de assuntos arcanos, mas não muito pra qualquer outro
+                    assunto.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Jazi.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Jazi</h3>
-            <p class="card-text">
-                Sacerdote chefe da igreja de Lathander da Capital Yevine. Ele oferece serviços tais como remover
-                maldições ou comunicar com os mortos por um certo preço.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Jazi.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Jazi</h3>
+                <p class="card-text">
+                    Sacerdote chefe da igreja de Lathander da Capital Yevine. Ele oferece serviços tais como remover
+                    maldições ou comunicar com os mortos por um certo preço.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/MaxineDaEspadaSagrada.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Maxine</h3>
-            <p class="card-text">
-                Conhecido como "Maxine da Espada Sagrada", um aventureiro de ouro que promete que um dia seu nome estará
-                ao lado do Púpura do Oeste e Passos Divinos na placa de aventureiros de Adamantium.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/MaxineDaEspadaSagrada.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Maxine</h3>
+                <p class="card-text">
+                    Conhecido como "Maxine da Espada Sagrada", um aventureiro de ouro que promete que um dia seu nome estará
+                    ao lado do Púpura do Oeste e Passos Divinos na placa de aventureiros de Adamantium.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Maciota.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Maciota</h3>
-            <p class="card-text">
-                Cafetão, traficante e, acima de tudo, informante. Maciota é o dono do "Paraíso do Maciota", na cidade de
-                Arcsall, e alega vender qualquer tipo de informação pelo preço certo.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Maciota.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Maciota</h3>
+                <p class="card-text">
+                    Cafetão, traficante e, acima de tudo, informante. Maciota é o dono do "Paraíso do Maciota", na cidade de
+                    Arcsall, e alega vender qualquer tipo de informação pelo preço certo.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/PrincipeDosElfos.webp" alt="Card image cap">
-        <div class="card-body">
-            <h3>Garius</h3>
-            <p class="card-text">
-               Príncipe do reino Élfico Pine Groove. Ele deveria ser o principe herdeiro, mas como ele não concordava com a politica segregacionista de seu pai, a herança foi passada para sua irmã.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/PrincipeDosElfos.webp" alt="Card image cap">
+            <div class="card-body">
+                <h3>Garius</h3>
+                <p class="card-text">
+                   Príncipe do reino Élfico Pine Groove. Ele deveria ser o principe herdeiro, mas como ele não concordava com a politica segregacionista de seu pai, a herança foi passada para sua irmã.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Baldwin.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h3>Baldwin</h3>
-            <p class="card-text">
-               General do Forte da Fênix Carmesin
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Baldwin.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h3>Baldwin</h3>
+                <p class="card-text">
+                   General do Forte da Fênix Carmesin
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Khadbah.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h3>Khadbah</h3>
-            <p class="card-text">
-               Chefe da tribo das 3 almas, tribo do Recanto Incerto que resgatou o Jorgus de sua escravidão.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Khadbah.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h3>Khadbah</h3>
+                <p class="card-text">
+                   Chefe da tribo das 3 almas, tribo do Recanto Incerto que resgatou o Jorgus de sua escravidão.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card col-md-3">
-        <img class="card-img-top" src="../../../../assets/imgs/npcs/Sukong.png" alt="Card image cap">
-        <div class="card-body">
-            <h3>Sukong</h3>
-            <p class="card-text">
-               Ultimo integrante de uma antiga Seita especializada em reparação de fendas espaciais. Foi sequestrado pelo Senhor do Crânio para que não pudesse atrapalhar seus plano. Graças a ele, a fenda espacial no reino de Dragohatan foi fechada definitivamente.
-            </p>
+        <div class="card col-md-3">
+            <img class="card-img-top" src="../../../../assets/imgs/npcs/Sukong.png" alt="Card image cap">
+            <div class="card-body">
+                <h3>Sukong</h3>
+                <p class="card-text">
+                   Ultimo integrante de uma antiga Seita especializada em reparação de fendas espaciais. Foi sequestrado pelo Senhor do Crânio para que não pudesse atrapalhar seus plano. Graças a ele, a fenda espacial no reino de Dragohatan foi fechada definitivamente.
+                </p>
+            </div>
         </div>
-    </div>
+    </ng-container>
+    <ng-container *ngIf="campanha != 'CD'">
+
+
+    </ng-container>
 </div>

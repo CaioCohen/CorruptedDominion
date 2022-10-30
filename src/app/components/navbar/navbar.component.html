@@ -1,5 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light nav-custom">
-    <img src="../../../assets/imgs/logoCorruptedDomain.png" height="30px">
+<nav class="navbar navbar-expand-lg navbar-light" [ngClass]="{
+  'nav-custom-CD': campanha == 'CD',
+  'nav-custom-TP': campanha != 'CD'
+}">
+    <img [src]="source" height="30px">
     <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="openModal(tplMenu)" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,7 +13,7 @@
           <a class="nav-link link-custom" routerLink="">Inicio</a>
         </li>
         <li>
-          <a class="nav-link link-custom" routerLink="missoes">Missões</a>
+          <a class="nav-link link-custom" routerLink="missoes" *ngIf="campanha == 'CD'">Missões</a>
         </li>
         <li>
             <a class="nav-link link-custom" routerLink="npcs">NPCs</a>
@@ -27,63 +30,75 @@
         <li>
           <a class="nav-link link-custom" routerLink="combate">Combate</a>
         </li>
+        <li>
+          <a class="nav-link link-custom" (click)="trocarCampanha()">Trocar</a>
+        </li>
       </ul>
     </div>
   </nav>
 
   <ng-template #tplMenu>
-    <div class="menu-modal">
+    <div [ngClass]="{
+      'menu-modal-CD': campanha == 'CD',
+      'menu-modal-TP': campanha != 'CD'
+    }">
       <div class="modal-body">
         <div class="row">
           <div class="col-6 pr-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" routerLink="" (click)="decline()">
+            <button type="button" class=" list-group-item-action" routerLink="" (click)="decline()">
               <i-bs name="house-door" width="1.5rem" height="1.5rem"></i-bs><br>
               INICIO
             </button>
           </div>
   
-          <div class="col-6 pl-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" routerLink="missoes" routerLinkActive="active" (click)="decline()">
+          <div class="col-6 pl-2 mb-3 modal-item" *ngIf="campanha == 'CD'">
+            <button type="button" class=" list-group-item-action" routerLink="missoes" routerLinkActive="active" (click)="decline()">
               <i-bs name="clipboard-data" width="1.5rem" height="1.5rem"></i-bs><br>
               MISSOES
             </button>
           </div>
   
           <div class="col-6 pr-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" routerLink="npcs" routerLinkActive="active" (click)="decline()">
+            <button type="button" class=" list-group-item-action" routerLink="npcs" routerLinkActive="active" (click)="decline()">
               <i-bs name="person-square" width="1.5rem" height="1.5rem"></i-bs><br>
               NPCs
             </button>
           </div>
   
           <div class="col-6 pl-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" routerLink="mapas" routerLinkActive="active" (click)="decline()">
+            <button type="button" class=" list-group-item-action" routerLink="mapas" routerLinkActive="active" (click)="decline()">
               <i-bs name="map-fill" width="1.5rem" height="1.5rem"></i-bs><br>
               MAPAS
             </button>
           </div>
   
           <div class="col-6 pr-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" routerLink="sessoes" (click)="decline()">
+            <button type="button" class=" list-group-item-action" routerLink="sessoes" (click)="decline()">
               <i-bs name="pen" width="1.5rem" height="1.5rem"></i-bs><br>
               SESSOES
             </button>
           </div>
   
           <div class="col-6 pl-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" routerLink="combate" (click)="decline()">
+            <button type="button" class=" list-group-item-action" routerLink="combate" (click)="decline()">
               <i-bs name="hurricane" width="1.5rem" height="1.5rem"></i-bs><br>
               COMBATE
             </button>
           </div>
           <div class="col-6 pl-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" routerLink="lores" (click)="decline()">
+            <button type="button" class=" list-group-item-action" routerLink="lores" (click)="decline()">
               <i-bs name="book" width="1.5rem" height="1.5rem"></i-bs><br>
               LORES
             </button>
           </div>
           <div class="col-6 pl-2 mb-3 modal-item">
-            <button type="button" class="list-group-item list-group-item-action" (click)="decline()">
+            <button type="button" class=" list-group-item-action" (click)="trocarCampanha()">
+              <i-bs name="arrow-down-up" width="1.5rem" height="1.5rem"></i-bs><br>
+              TROCAR
+            </button>
+          </div>
+          <div class="col-6 pl-2 mb-3 modal-item">
+            <button type="button" class=" list-group-item-action" (click)="decline()">
               <i-bs name="door-open" width="1.5rem" height="1.5rem"></i-bs><br>
               Fechar
             </button>

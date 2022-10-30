@@ -1,58 +1,62 @@
 <div class="bloco">
     <div class="container">
-        <h2>Capital Yevine</h2>
-        <div class="row">
-            <div class="col-md-8">
-                <img class="map col-md-8" src="../../../assets/imgs/maps/capitalYevine.png">
-            </div>
-            <div class="col-md-4">
-                <b>Pontos:</b><br>
-                <div class="legenda">
-                <i-bs style="color: orange;" name="house-fill"></i-bs><span>Guilda dos aventureiros</span><br>
-                <i-bs style="color: blue;" name="house-fill"></i-bs><span>Igreja de Lathander</span><br>
-                <i-bs style="color: yellow;" name="house-fill"></i-bs><a routerLink="pavilhao">Pavilhão da forja mágica</a><br>
-                <i-bs style="color: rgb(80, 200, 240);" name="house-fill"></i-bs><a routerLink="ibexcatalog">Mansão do Ibex </a><br>
-                <i-bs style="color: purple;" name="house-fill"></i-bs><span>Posto de guarda</span><br>
-                <i-bs style="color: red;" name="house-fill"></i-bs><span>Castelo do Duque</span><br>
-                <i-bs style="color: pink;" name="house-fill"></i-bs><span>Biblioteca Palavras Celestiais</span><br>
+        <ng-container *ngIf="campanha == 'CD'">
+            <h2>Capital Yevine</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <img class="map col-md-8" src="../../../assets/imgs/maps/capitalYevine.png">
+                </div>
+                <div class="col-md-4">
+                    <b>Pontos:</b><br>
+                    <div class="legenda">
+                    <i-bs style="color: orange;" name="house-fill"></i-bs><span>Guilda dos aventureiros</span><br>
+                    <i-bs style="color: blue;" name="house-fill"></i-bs><span>Igreja de Lathander</span><br>
+                    <i-bs style="color: yellow;" name="house-fill"></i-bs><a routerLink="pavilhao">Pavilhão da forja mágica</a><br>
+                    <i-bs style="color: rgb(80, 200, 240);" name="house-fill"></i-bs><a routerLink="ibexcatalog">Mansão do Ibex </a><br>
+                    <i-bs style="color: purple;" name="house-fill"></i-bs><span>Posto de guarda</span><br>
+                    <i-bs style="color: red;" name="house-fill"></i-bs><span>Castelo do Duque</span><br>
+                    <i-bs style="color: pink;" name="house-fill"></i-bs><span>Biblioteca Palavras Celestiais</span><br>
+                    </div>
                 </div>
             </div>
-        </div>
-        <h2>Ducado Cithin</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/ducadoCithin.png">
-        </div>
-        <h2>Reino Graindi</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/reinoGraindi.png">
-        </div>
-        <h2>Continente</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/Continente.png">
-        </div>
-        <h2>Região Esverdejante</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/regEsverdejante.png">
-        </div>
-        <h2>Fenda Cheslis</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/Cheslis.png">
-        </div>
-        <h2>Picos dos Grifos</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/picosDosGrifos.png">
-        </div>
-        <h2>Ruínas Dracônicas</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/RuinasDraconicas.png">
-        </div>
-        <h2>Ducado Smotheus</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/ducadoSmotheus.png">
-        </div>
-        <h2>Recanto Incerto</h2>
-        <div>
-            <img class="map" src="../../../assets/imgs/maps/recantoIncerto.png">
-        </div>
+            <h2>Ducado Cithin</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/ducadoCithin.png">
+            </div>
+            <h2>Reino Graindi</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/reinoGraindi.png">
+            </div>
+            <h2>Continente</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/Continente.png">
+            </div>
+            <h2>Região Esverdejante</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/regEsverdejante.png">
+            </div>
+            <h2>Fenda Cheslis</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/Cheslis.png">
+            </div>
+            <h2>Picos dos Grifos</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/picosDosGrifos.png">
+            </div>
+            <h2>Ruínas Dracônicas</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/RuinasDraconicas.png">
+            </div>
+            <h2>Ducado Smotheus</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/ducadoSmotheus.png">
+            </div>
+            <h2>Recanto Incerto</h2>
+            <div>
+                <img class="map" src="../../../assets/imgs/maps/recantoIncerto.png">
+            </div>
+        </ng-container>
+        <ng-container *ngIf="campanha != 'CD'">
+        </ng-container>
     </div>
 </div>

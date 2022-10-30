@@ -1,43 +1,65 @@
-.nav-custom{
-    background-color: #990033;
+.nav-custom-CD {
+  background-color: #990033;
 }
 
-.link-custom{
-    color: white !important;
-    padding: 0 25px !important;
-    font-size: 150%;
-    border-right: solid rgb(0, 0, 0, .5) 1px;
-    text-align: center;
+.nav-custom-TP {
+  background-color: rgb(0, 25, 139);
 }
 
-.link-custom:hover{
-    text-shadow: 0px 0px 10px black, 0px 0px 20px black, 0px 0px 30px black;
+.link-custom {
+  color: white !important;
+  padding: 0 25px !important;
+  font-size: 150%;
+  border-right: solid rgb(0, 0, 0, 0.5) 1px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.menu-modal{
-    background-color: darkred;
+.link-custom:hover {
+  text-shadow: 0px 0px 10px black, 0px 0px 20px black, 0px 0px 30px black;
 }
 
-.modal-item{
-    text-align: center;
-}
-
-.list-group-item{
+.menu-modal-CD {
+  background-color: darkred;
+  button {
     color: black;
     font-weight: bold;
     border: 2px solid black;
     border-radius: 5px;
+    height: 7rem;
     background-color: #b30000;
-}
+  }
 
-.list-group-item:hover{
+  button:hover {
     background-color: red;
     border: 2px solid gray;
+  }
 }
 
-.drop-btn{
-    background-color: #990033;
-    border: none;
+.menu-modal-TP {
+  background-color: rgb(0, 25, 139);
+  button {
     color: white;
-    font-size: 150%;
+    height: 7rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(0, 25, 139);
+  }
+
+  button:hover {
+    background-color: rgb(45, 65, 245);
+    border: 2px solid gray;
+  }
+}
+
+.modal-item {
+  text-align: center;
+}
+
+.drop-btn {
+  background-color: #990033;
+  border: none;
+  color: white;
+  font-size: 150%;
 }

@@ -1,17 +1,34 @@
 <div class="bloco">
-    <h1>Corrupted Domain</h1>
-    <p>Um grupo de aventureiros acaba de se inscrever na guilda, mas durante sua primeira missão eles acabam encontrando
-        o resquício do sentido divino de um Deus. Por quê aquele Deus estava ali? O que aconteceu com ele? 
-        O que será que os jogadores receberam como a benção divina dele?
-        Link para o Roll20:
-    </p>
-    <div class="media position-relative anuncio">
-        <img height="200px" src="../../assets/imgs/roll20.png" class="mr-3 anuncio-img" alt="...">
-        <div class="media-body">
-          <h5 class="mt-0">Roll20</h5>
-          <p>Roll20 Corrupted Domain(não possui link ainda).
-          </p>
-          <a href="#" class="stretched-link"></a>
+    <ng-container *ngIf="campanha=='CD'">
+        <h1>Corrupted Domain</h1>
+        <p>Um grupo de aventureiros acaba de se inscrever na guilda, mas durante sua primeira missão eles acabam encontrando
+            o resquício do sentido divino de um Deus. Por quê aquele Deus estava ali? O que aconteceu com ele? 
+            O que será que os jogadores receberam como a benção divina dele?
+            Link para o Roll20:
+        </p>
+        <div class="media position-relative anuncio">
+            <img height="200px" src="../../assets/imgs/roll20.png" class="mr-3 anuncio-img" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0">Roll20</h5>
+              <p>Roll20 Corrupted Domain(não possui link ainda).
+              </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
         </div>
-    </div>
+    </ng-container>
+    <ng-container *ngIf="campanha!='CD'">
+        <h1>Through the Planes</h1>
+        <p>Sinopse disponivel depois da primeira sessão
+        </p>
+        <div class="media position-relative anuncio">
+            <img height="200px" src="../../assets/imgs/owlBear.png" class="mr-3 anuncio-img" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0">OwlBear</h5>
+              <p>Owl Bear Through the Planes. Grid de combate.
+              </p>
+              <a href="https://www.owlbear.rodeo/game/7ttVdMLDs" class="stretched-link"></a>
+            </div>
+        </div>
+    </ng-container>
+    
 </div>
