@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   modalRef: BsModalRef | undefined;
   campanha: any = "";
-  source = "../../../assets/imgs/logoCorruptedDomain.png";
+  source = "../../../assets/imgs/logoThroughThePlanes.png";
 
   constructor(private modalService: BsModalService) { }
 
