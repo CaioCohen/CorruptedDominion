@@ -38,6 +38,35 @@
   width: 25%;
 }
 
+.cards{
+  background-color: lightgray;
+  padding: 10px 10px 0px 10px;
+  margin: 10px;
+  border-radius: 21px;
+  input{
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.botao-sem-vantagem{
+  background-color: gray;
+  color: black;
+  border: none;
+}
+
+.botao-vantagem{
+  background-color: darkgreen;
+  color: white;
+  border: none;
+}
+
+.botao-desvantagem{
+  background-color: darkred;
+  color: white;
+  border: none;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -57,6 +86,10 @@ table {
   #addCharButton{
     text-align: center;
     padding: 10px;
+
+    button{
+      margin: 2px;
+    }
   }
 
   #formAdd{
