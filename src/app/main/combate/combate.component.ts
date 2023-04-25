@@ -117,6 +117,7 @@ export class CombateComponent implements OnInit {
   toggleVantagem(i: number){
     this.iniciativas[i].vantagem += 1;
     this.iniciativas[i].vantagem = this.iniciativas[i].vantagem % 3;
+    localStorage.setItem("iniciativas",JSON.stringify(this.iniciativas))
   }
 
   rollDice(n : number) {
