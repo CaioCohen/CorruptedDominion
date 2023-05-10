@@ -1,20 +1,39 @@
-.bloco{
-    background-color: rgb(0,0,0,.7);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10px;
-    position: relative;
+.bloco {
+  background-color: rgb(0, 0, 0, 0.7);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  position: relative;
 }
 
-h1{
-    text-align: center;
-    color: white;
+h1 {
+  text-align: center;
+  color: white;
 }
 
-h5{
-    color: white;
+h5 {
+  color: white;
 }
 
-p{
-    color: white;
+h3 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.listaDocumentos {
+  color: white;
+  li {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 4px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  }
 }
