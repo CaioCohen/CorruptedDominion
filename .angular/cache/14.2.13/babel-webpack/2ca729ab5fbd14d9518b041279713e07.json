@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Character {\n  constructor() {\n    this.nome = '';\n    this.iniciativa = 0;\n    this.pv = 0;\n    this.dano = 0;\n    this.pvTemp = 0;\n  }\n}","map":null,"metadata":{},"sourceType":"module"}
