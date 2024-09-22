@@ -11,6 +11,10 @@
     cursor: pointer;
 }
 
+textarea{
+    width: 100%;
+}
+
 @media only screen and (max-width: 750px){
     .bloco{
         margin: 10px 0;

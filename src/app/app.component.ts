@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     if(!('campanha' in sessionStorage)){
-      sessionStorage.setItem("campanha", "TP");
+      sessionStorage.setItem("campanha", "HW");
     }
   }
 }

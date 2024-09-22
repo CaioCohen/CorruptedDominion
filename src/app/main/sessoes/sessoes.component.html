@@ -1,4 +1,5 @@
 <div class="bloco">
+  <button *ngIf="campanha == 'HW' && isAdmin" class="btn btn-primary" (click)="onEdit()">Editar</button>
   <accordion [isAnimated]="true">
     <ng-container *ngIf="campanha == 'CD'">
       <accordion-group>
@@ -994,7 +995,7 @@
           anos.</p>
       </accordion-group>
     </ng-container>
-    <ng-container *ngIf="campanha != 'CD'">
+    <ng-container *ngIf="campanha == 'PR'">
       <accordion-group>
         <div accordion-heading class="header"> 1° sessão 22/01</div>
         Cada um dos membros do grupo é convocado pelas principais forças do reino para se apresentaram na igreja de
@@ -1830,5 +1831,26 @@
         <p>Com isso, depois de quase 4 anos, desde o nível 1 até o nível 20 + posto divino 0, a campanha Corrupted Domain -> Primordial se encerra.</p>
       </accordion-group>
     </ng-container>
+    <ng-container *ngIf="campanha == 'HW'">
+      <ng-container *ngIf="!isEdit">
+        <accordion-group *ngFor="let item of info.sessoes; let i = index">
+          <div accordion-heading class="header"> {{item.titulo}}</div>
+          <p>{{item.descricao}}</p>
+        </accordion-group>
+      </ng-container>
+      <ng-container *ngIf="isEdit">
+        <accordion-group *ngFor="let item of info.sessoes; let i = index">
+          <div accordion-heading class="header"><input [(ngModel)]="info.sessoes[i].titulo" /></div>
+          <textarea [(ngModel)]="info.sessoes[i].descricao"></textarea>
+        </accordion-group>
+      </ng-container>                
+      <button *ngIf="isEdit" class="btn btn-primary" (click)="openModal(tplAdmin)">Salvar</button>   
+    </ng-container>
   </accordion>
 </div>
+
+<ng-template #tplAdmin>
+  <label for="senha">Senha:</label>
+  <input name="senha" [(ngModel)]="senha"/>
+  <button class="btn btn-primary" (click)="editar()">Confirmar</button>
+</ng-template>
