@@ -1,12 +1,16 @@
+<button *ngIf="campanha == 'HW' && isAdmin" class="btn btn-primary" (click)="onEdit()">Editar</button>
 <div class="row d-flex justify-content-center">
+
     <ng-container *ngIf="campanha == 'CD'">
         <div class="card col-md-3">
             <img class="card-img-top" src="../../../../assets/imgs/npcs/ForgeDemon.png" alt="Card image cap">
             <div class="card-body">
                 <h3>Demônio da forja</h3>
-                <p class="card-text">Ferreiro do pavilhão da forja magica, seu apelido vêm do selo de demônio que ele coloca
+                <p class="card-text">Ferreiro do pavilhão da forja magica, seu apelido vêm do selo de demônio que ele
+                    coloca
                     nas armas/armaduras que ele considera uma obra-prima. Ele é o responsável pelos itens mágicos do
-                    pavilhão da forja mágica e parece ter uma certa autoridade dentro do reino, visto que ele não se dirige
+                    pavilhão da forja mágica e parece ter uma certa autoridade dentro do reino, visto que ele não se
+                    dirige
                     formalmente ao rei e o rei não parece se importar.</p>
             </div>
         </div>
@@ -21,7 +25,8 @@
             <img class="card-img-top" src="../../../../assets/imgs/npcs/Ibex.png" alt="Card image cap">
             <div class="card-body">
                 <h3>Wild Ibex</h3>
-                <p class="card-text">Aventureiro de ouro "aposentado", agora ele vende todo tipo de item que pega em suas
+                <p class="card-text">Aventureiro de ouro "aposentado", agora ele vende todo tipo de item que pega em
+                    suas
                     aventuras.
                     Também vende animais que ele captura, podem ser usados como montaria, mascotes ou animais de combate
                 </p>
@@ -32,7 +37,8 @@
             <div class="card-body">
                 <h3>Aprendiz de Dragon Slayer</h3>
                 <p class="card-text">
-                    Os Dragon Slayers vêm da montanha das águas cristalinas, seus aprendizes são contratados pelo duque para
+                    Os Dragon Slayers vêm da montanha das águas cristalinas, seus aprendizes são contratados pelo duque
+                    para
                     ajudar na segurança do ducado. Os Dragon Slayers são a maior força do Reino Graindi.
                 </p>
             </div>
@@ -43,7 +49,8 @@
                 <h3>Rhogar</h3>
                 <p class="card-text">
                     Rhogar é um draconato com acestral de bronze. Passou a vida toda na montanha das águas cristalinas,
-                    cresceu treinando e estudando para se tornar um Dragon Slayer. Atualmente, ele é um aprendiz de Dragon
+                    cresceu treinando e estudando para se tornar um Dragon Slayer. Atualmente, ele é um aprendiz de
+                    Dragon
                     Slayer e trabalha como capitão da guarda da capital Yevine.
                 </p>
             </div>
@@ -62,7 +69,8 @@
             <div class="card-body">
                 <h3>Kemrumhaar</h3>
                 <p class="card-text">
-                    Dragão ancião de bronze. Ele é chamado de patriarca pelos Dragonslayers, já que foi ele que guiou essa organização depois que a guerra da era dracônica acabou ha milhares de anos.
+                    Dragão ancião de bronze. Ele é chamado de patriarca pelos Dragonslayers, já que foi ele que guiou
+                    essa organização depois que a guerra da era dracônica acabou ha milhares de anos.
                 </p>
             </div>
         </div>
@@ -71,7 +79,9 @@
             <div class="card-body">
                 <h3>Púrpura do Oeste</h3>
                 <p class="card-text">
-                    O primeiro aventureiro de Adamantium que surgiu no reino. Seu paradeiro ficou desconhecido por mais de uma década, acreditava-se que ele poderia até ter morrido. No final, depois de todo esse tempo, o Púrpura do Oeste era o Demônio da Forja.
+                    O primeiro aventureiro de Adamantium que surgiu no reino. Seu paradeiro ficou desconhecido por mais
+                    de uma década, acreditava-se que ele poderia até ter morrido. No final, depois de todo esse tempo, o
+                    Púrpura do Oeste era o Demônio da Forja.
                 </p>
             </div>
         </div>
@@ -80,7 +90,7 @@
             <div class="card-body">
                 <h3>General Túlio</h3>
                 <p class="card-text">
-                  Ele é o General do reino Graindi. Em tempos de guerra, sua autoridade supera até a do próprio rei.
+                    Ele é o General do reino Graindi. Em tempos de guerra, sua autoridade supera até a do próprio rei.
                 </p>
             </div>
         </div>
@@ -89,7 +99,9 @@
             <div class="card-body">
                 <h3>Midelia</h3>
                 <p class="card-text">
-                    A Grande Sacerdote da Igreja de Lathander. Ela foi, junto com um grupo de sacerdotes e paladinos de Lathander, atacar o dominio do Lorde Demônio, mas foram derrotados e, por isso, ela acabou sendo escravizada por ele durante meses, mas foi resgatada pelo grupo.
+                    A Grande Sacerdote da Igreja de Lathander. Ela foi, junto com um grupo de sacerdotes e paladinos de
+                    Lathander, atacar o dominio do Lorde Demônio, mas foram derrotados e, por isso, ela acabou sendo
+                    escravizada por ele durante meses, mas foi resgatada pelo grupo.
                 </p>
             </div>
         </div>
@@ -107,12 +119,13 @@
             <div class="card-body">
                 <h3>Meng</h3>
                 <p class="card-text">
-                    O Passos Divinos. Sumo Sacerdote e fundador da igreja de Lathander do Ducado Cithin. Lider da ordem de paladinos e Aventureiro de Adamantium. Não se sabe a sua idade, nem de onde veio.
+                    O Passos Divinos. Sumo Sacerdote e fundador da igreja de Lathander do Ducado Cithin. Lider da ordem
+                    de paladinos e Aventureiro de Adamantium. Não se sabe a sua idade, nem de onde veio.
                 </p>
             </div>
         </div>
-    </ng-container> 
-    <ng-container *ngIf="campanha != 'CD'">
+    </ng-container>
+    <ng-container *ngIf="campanha == 'PR'">
         <div class="card col-md-3">
             <img class="card-img-top" src="../../../../assets/imgs/npcs/motarah.jpg" alt="Card image cap">
             <div class="card-body">
@@ -127,7 +140,8 @@
             <div class="card-body">
                 <h3>Totaru</h3>
                 <p class="card-text">
-                    Segundo principe da Corte da primavera. Ajudou seu Irmão Cataru no seu plano de limpeza dos nobres corruptos.
+                    Segundo principe da Corte da primavera. Ajudou seu Irmão Cataru no seu plano de limpeza dos nobres
+                    corruptos.
                 </p>
             </div>
         </div>
@@ -136,7 +150,7 @@
             <div class="card-body">
                 <h3>Muriel Foggyclover</h3>
                 <p class="card-text">
-                    Ela é a senhora do Crepúsculo, adorada e temida por todos os habitantes da corte do crepúsculo. 
+                    Ela é a senhora do Crepúsculo, adorada e temida por todos os habitantes da corte do crepúsculo.
                 </p>
             </div>
         </div>
@@ -154,7 +168,8 @@
             <div class="card-body">
                 <h3>Storm</h3>
                 <p class="card-text">
-                    Não sabem o nome dela. Uma escrava pertencente à raça amaldiçoada, suspeita-se que é nativa do plano elemental do fogo e possui poderes naturais de cura. Morreu no primeiro combate que levaram ela.
+                    Não sabem o nome dela. Uma escrava pertencente à raça amaldiçoada, suspeita-se que é nativa do plano
+                    elemental do fogo e possui poderes naturais de cura. Morreu no primeiro combate que levaram ela.
                 </p>
             </div>
         </div>
@@ -175,13 +190,14 @@
                     O Titâ Primordial do plano da água. Uma semi-divindade que rege o Azure Clan.
                 </p>
             </div>
-        </div>        
+        </div>
         <div class="card col-md-3">
             <img class="card-img-top" src="../../../../assets/imgs/npcs/Lucent.png" alt="Card image cap">
             <div class="card-body">
                 <h3>Fênix Ancestral</h3>
                 <p class="card-text">
-                    Lucent, a Fênix Ancestral do plano elemental do fogo. Parece que ela possui alguma relação amistosa com o Flam, mas não se sabe ao certo qual.
+                    Lucent, a Fênix Ancestral do plano elemental do fogo. Parece que ela possui alguma relação amistosa
+                    com o Flam, mas não se sabe ao certo qual.
                 </p>
             </div>
         </div>
@@ -199,7 +215,9 @@
             <div class="card-body">
                 <h3>Passos Divinos</h3>
                 <p class="card-text">
-                    Chamado Meng, é o Sumo Sacerdote e fundador da igreja de Lathander do Ducado Cithin. Lider da ordem de paladinos e Aventureiro de Adamantium. Não se sabe a sua idade, nem de onde veio. Se tornou um Semideus após fazer parte da destruição do Deus Supremo que governava o plano do vento.
+                    Chamado Meng, é o Sumo Sacerdote e fundador da igreja de Lathander do Ducado Cithin. Lider da ordem
+                    de paladinos e Aventureiro de Adamantium. Não se sabe a sua idade, nem de onde veio. Se tornou um
+                    Semideus após fazer parte da destruição do Deus Supremo que governava o plano do vento.
                 </p>
             </div>
         </div>
@@ -208,9 +226,52 @@
             <div class="card-body">
                 <h3>Púrpura do Oeste</h3>
                 <p class="card-text">
-                    Conhecido como Demônio da Forja por aqueles que viviam no reino Graindi e Demônio do Caldeirão pelos alquimistas do plano da terra. Não se sabe muito sobre ele, apenas de que ele é o artíficer mais capaz encontrado até o momento. Suspeita-se de que ele é nativo do plano de Mechanus, o plano superior da ordem.
+                    Conhecido como Demônio da Forja por aqueles que viviam no reino Graindi e Demônio do Caldeirão pelos
+                    alquimistas do plano da terra. Não se sabe muito sobre ele, apenas de que ele é o artíficer mais
+                    capaz encontrado até o momento. Suspeita-se de que ele é nativo do plano de Mechanus, o plano
+                    superior da ordem.
                 </p>
             </div>
         </div>
     </ng-container>
+    <ng-container *ngIf="campanha == 'HW'">
+        <ng-container *ngIf="!isEdit">
+            <ng-container *ngFor="let item of info.npcs">
+                <div class="card col-md-3" *ngIf="item.tipo == 1">
+                    <img class="card-img-top" [src]="item.urlImagem" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>{{item.nome}}</h3>
+                        <p class="card-text">
+                            {{item.descricao}}
+                        </p>
+                    </div>
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="isEdit">
+            <ng-container *ngFor="let item of info.npcs; let i = index">
+                <div style="width: 100%; text-align: center;" *ngIf="item.tipo == 1">
+                    <label>Nome:</label>
+                    <input [(ngModel)]="item.nome"/>
+                    <label>Descrição:</label>
+                    <input [(ngModel)]="item.descricao"/>
+                    <label>URL:</label>
+                    <input [(ngModel)]="item.urlImagem"/>
+                    <button class="btn btn-danger" (click)="deleteNPC(i)">-</button>                
+                </div>                                
+            </ng-container>
+            <button class="btn btn-success" (click)="addNPC()">+</button>
+            <button class="btn btn-primary" (click)="openModal(tplAdmin)">Salvar</button>  
+        </ng-container>
+    </ng-container>
 </div>
+
+<ng-template #tplAdmin>
+    <div style="padding: 20px;">
+        <label for="senha">Senha:</label>
+        <br>
+        <input name="senha" [(ngModel)]="senha"/>
+        <br>
+        <button class="btn btn-primary" style="width: auto;" (click)="editar()">Confirmar</button>
+      </div>
+  </ng-template>

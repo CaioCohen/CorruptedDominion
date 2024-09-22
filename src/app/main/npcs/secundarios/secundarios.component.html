@@ -1,3 +1,4 @@
+<button *ngIf="campanha == 'HW' && isAdmin" class="btn btn-primary" (click)="onEdit()">Editar</button>
 <div class="row d-flex justify-content-center">
     <ng-container *ngIf="campanha == 'CD'">
         <div class="card col-md-3">
@@ -105,7 +106,7 @@
             </div>
         </div>
     </ng-container>
-    <ng-container *ngIf="campanha != 'CD'">
+    <ng-container *ngIf="campanha == 'PR'">
         <div class="card col-md-3">
             <img class="card-img-top" src="../../../../assets/imgs/npcs/Brianne.jpg" alt="Card image cap">
             <div class="card-body">
@@ -188,4 +189,44 @@
             </div>
         </div>
     </ng-container>
+    <ng-container *ngIf="campanha == 'HW'">
+        <ng-container *ngIf="!isEdit">
+            <ng-container *ngFor="let item of info.npcs">
+                <div class="card col-md-3" *ngIf="item.tipo == 2">
+                    <img class="card-img-top" [src]="item.urlImagem" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>{{item.nome}}</h3>
+                        <p class="card-text">
+                            {{item.descricao}}
+                        </p>
+                    </div>
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="isEdit">
+            <ng-container *ngFor="let item of info.npcs; let i = index">
+                <div style="width: 100%; text-align: center;" *ngIf="item.tipo == 2">
+                    <label>Nome:</label>
+                    <input [(ngModel)]="item.nome"/>
+                    <label>Descrição:</label>
+                    <input [(ngModel)]="item.descricao"/>
+                    <label>URL:</label>
+                    <input [(ngModel)]="item.urlImagem"/>
+                    <button class="btn btn-danger" (click)="deleteNPC(i)">-</button>                
+                </div>                                
+            </ng-container>
+            <button class="btn btn-success" (click)="addNPC()">+</button>
+            <button class="btn btn-primary" (click)="openModal(tplAdmin)">Salvar</button>  
+        </ng-container>
+    </ng-container>
 </div>
+
+<ng-template #tplAdmin>
+    <div style="padding: 20px;">
+        <label for="senha">Senha:</label>
+        <br>
+        <input name="senha" [(ngModel)]="senha"/>
+        <br>
+        <button class="btn btn-primary" style="width: auto;" (click)="editar()">Confirmar</button>
+      </div>
+  </ng-template>

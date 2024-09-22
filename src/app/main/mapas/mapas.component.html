@@ -1,4 +1,5 @@
 <div class="bloco">
+    <button *ngIf="campanha == 'HW' && isAdmin" class="btn btn-primary" (click)="onEdit()">Editar</button>
     <div class="container">
         <ng-container *ngIf="campanha == 'CD'">
             <h2>Capital Yevine</h2>
@@ -56,7 +57,7 @@
                 <img class="map" src="../../../assets/imgs/maps/recantoIncerto.png">
             </div>
         </ng-container>
-        <ng-container *ngIf="campanha != 'CD'">
+        <ng-container *ngIf="campanha == 'PR'">
             <h2>Fey Wild</h2>
             <div>
                 <img class="map" src="../../../assets/imgs/maps/FeyWild.png">
@@ -94,5 +95,38 @@
                 <img class="map" src="../../../assets/imgs/maps/tumbaDosDeuses.png">
             </div>
         </ng-container>
+        <ng-container *ngIf="campanha == 'HW'">
+        <ng-container *ngIf="!isEdit">
+            <ng-container *ngFor="let item of info.mapas">
+                <h2>{{item.titulo}}</h2>
+                <div>
+                    <img class="map" [src]="item.urlImagem">
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="isEdit">
+            <div style="width: 100%;" *ngFor="let item of info.mapas; let i = index">
+                <label>Título</label>
+                <input [(ngModel)]="info.mapas[i].titulo"/> 
+                <label>URL</label>
+                <input [(ngModel)]="info.mapas[i].urlImagem"/>
+                <button class="btn btn-danger" (click)="deleteMapa(i)">-</button>                
+            </div>
+            <button class="btn btn-success" (click)="addMapa()">+</button>
+            <button class="btn btn-primary" (click)="openModal(tplAdmin)">Salvar</button>   
+        </ng-container>
+            
+            
+        </ng-container>
     </div>
 </div>
+
+<ng-template #tplAdmin>
+    <div style="padding: 20px;">
+        <label for="senha">Senha:</label>
+        <br>
+        <input name="senha" [(ngModel)]="senha"/>
+        <br>
+        <button class="btn btn-primary" style="width: auto;" (click)="editar()">Confirmar</button>
+      </div>
+  </ng-template>

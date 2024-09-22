@@ -113,7 +113,11 @@
   </ng-template>
 
   <ng-template #tplAdmin>
-    <label for="senha">Senha:</label>
-    <input name="senha" [(ngModel)]="senha"/>
-    <button class="btn btn-primary" (click)="virarDM()">Confirmar</button>
+    <div style="padding: 20px;">
+      <label for="senha">Senha:</label>
+      <br>
+      <input name="senha" [(ngModel)]="senha"/>
+      <br>
+      <button class="btn btn-primary" style="width: auto;" (click)="virarDM()">Confirmar</button>
+    </div>
   </ng-template>

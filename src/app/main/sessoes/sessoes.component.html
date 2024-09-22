@@ -1833,24 +1833,31 @@
     </ng-container>
     <ng-container *ngIf="campanha == 'HW'">
       <ng-container *ngIf="!isEdit">
-        <accordion-group *ngFor="let item of info.sessoes; let i = index">
+        <accordion-group *ngFor="let item of info.sessoes">
           <div accordion-heading class="header"> {{item.titulo}}</div>
           <p>{{item.descricao}}</p>
         </accordion-group>
       </ng-container>
       <ng-container *ngIf="isEdit">
         <accordion-group *ngFor="let item of info.sessoes; let i = index">
-          <div accordion-heading class="header"><input [(ngModel)]="info.sessoes[i].titulo" /></div>
+          <div accordion-heading class="header"><input [(ngModel)]="info.sessoes[i].titulo" /> <button class="btn btn-danger" (click)="deleteSessao(i)">-</button></div>
           <textarea [(ngModel)]="info.sessoes[i].descricao"></textarea>
         </accordion-group>
-      </ng-container>                
-      <button *ngIf="isEdit" class="btn btn-primary" (click)="openModal(tplAdmin)">Salvar</button>   
+        <div style="width: 100%; text-align: center;">
+          <button class="btn btn-success" (click)="addSessao()">+</button>           
+        </div>
+        <button class="btn btn-primary" (click)="openModal(tplAdmin)">Salvar</button>   
+      </ng-container>     
     </ng-container>
   </accordion>
 </div>
 
 <ng-template #tplAdmin>
-  <label for="senha">Senha:</label>
-  <input name="senha" [(ngModel)]="senha"/>
-  <button class="btn btn-primary" (click)="editar()">Confirmar</button>
+  <div style="padding: 20px;">
+      <label for="senha">Senha:</label>
+      <br>
+      <input name="senha" [(ngModel)]="senha"/>
+      <br>
+      <button class="btn btn-primary" style="width: auto;" (click)="editar()">Confirmar</button>
+    </div>
 </ng-template>

@@ -75,7 +75,7 @@ export class NavbarComponent implements OnInit {
   async virarDM() {
     if (this.senha) {
       let cripto = await this.service.hashString(this.senha);
-      if(cripto == "51f9f5c6ce77a4e975e045f7d9dadc5dd4f32bbbdaed90b96743fa3f293a7675"){
+      if(this.service.validate(cripto)){
         sessionStorage.setItem("isAdmin","sim");
       }else{
         alert("senha incorreta");

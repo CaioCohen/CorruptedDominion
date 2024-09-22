@@ -11,23 +11,13 @@ export class Sessao {
     urlImagem: string= "";
     nome: string= "";
     descricao: string= "";
+    tipo: number = 0;
   
     constructor(init?: Partial<NPC>) {
       Object.assign(this, init);
     }
   }
-  
-  export class NPCs {
-    primarios: NPC[];
-    secundarios: NPC[];
-    terciarios: NPC[];
-  
-    constructor(init?: Partial<NPCs>) {
-      this.primarios = init?.primarios?.map(npc => new NPC(npc)) || [];
-      this.secundarios = init?.secundarios?.map(npc => new NPC(npc)) || [];
-      this.terciarios = init?.terciarios?.map(npc => new NPC(npc)) || [];
-    }
-  }
+
   
   export class Lore {
     titulo: string= "";
@@ -49,13 +39,13 @@ export class Sessao {
   
   export class Campanha {
     sessoes: Sessao[];
-    npcs: NPCs;
+    npcs: NPC[];
     lores: Lore[];
     mapas: Mapa[];
   
     constructor(init?: Partial<Campanha>) {
       this.sessoes = init?.sessoes?.map(sessao => new Sessao(sessao)) || [];
-      this.npcs = new NPCs(init?.npcs);
+      this.npcs = init?.npcs?.map(npc => new NPC(npc)) || [];
       this.lores = init?.lores?.map(lore => new Lore(lore)) || [];
       this.mapas = init?.mapas?.map(mapa => new Mapa(mapa)) || [];
     }

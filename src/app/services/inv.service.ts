@@ -42,4 +42,9 @@ export class InvService {
 
     return hashHex;
   }
+
+  validate(senha: string){
+    console.log(senha);
+    return senha == "59c3c99782105600c86890bc77420ee6d6f227102818828bd03e3236851f0613";
+  }
 }

@@ -1,4 +1,5 @@
 <div class="bloco">
+    <button *ngIf="campanha == 'HW' && isAdmin" class="btn btn-primary" (click)="onEdit()">Editar</button>
     <accordion [isAnimated]="true">
         <ng-container *ngIf="campanha == 'CD'">
             <accordion-group>
@@ -218,7 +219,7 @@
                     que apenas um pouco.</p>
             </accordion-group>
         </ng-container>
-        <ng-container *ngIf="campanha != 'CD'">
+        <ng-container *ngIf="campanha == 'PR'">
             <accordion-group>
                 <div accordion-heading class="header"> Chaos Primordial</div>
                 <p>Os planos de existência são divididos entre interiores e exteriores, ou, como as divindades chama,
@@ -571,5 +572,33 @@
                     <p>O semi-plano da raça precursora acabou se rompendo e mesclando-se com o plano do vento, então eles acabaram tendo que viver sofrendo a mal adaptação de seu corpo, os planos inferiores não provém energia magica suficiente para que seus fetos se desenvolvam completamente, precisando de acompanhamento especializado para tal.</p>
             </accordion-group>
         </ng-container>
+        <ng-container *ngIf="campanha == 'HW'">
+            <ng-container *ngIf="!isEdit">
+              <accordion-group *ngFor="let item of info.lores">
+                <div accordion-heading class="header"> {{item.titulo}}</div>
+                <p>{{item.descricao}}</p>
+              </accordion-group>
+            </ng-container>
+            <ng-container *ngIf="isEdit">
+              <accordion-group *ngFor="let item of info.lores; let i = index">
+                <div accordion-heading class="header"><input [(ngModel)]="info.lores[i].titulo" /> <button class="btn btn-danger" (click)="deleteSessao(i)">-</button></div>
+                <textarea [(ngModel)]="info.lores[i].descricao"></textarea>
+              </accordion-group>
+              <div style="width: 100%; text-align: center;">
+                <button class="btn btn-success" (click)="addSessao()">+</button>           
+              </div>
+              <button class="btn btn-primary" (click)="openModal(tplAdmin)">Salvar</button>   
+            </ng-container>     
+          </ng-container>
     </accordion>
 </div>
+
+<ng-template #tplAdmin>
+    <div style="padding: 20px;">
+        <label for="senha">Senha:</label>
+        <br>
+        <input name="senha" [(ngModel)]="senha"/>
+        <br>
+        <button class="btn btn-primary" style="width: auto;" (click)="editar()">Confirmar</button>
+      </div>
+  </ng-template>
