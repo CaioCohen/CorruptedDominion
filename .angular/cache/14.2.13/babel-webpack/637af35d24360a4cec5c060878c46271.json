@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Iniciativa {\n  constructor() {\n    this.nome = \"\";\n    this.iniciativa = 0;\n    this.pv = 0;\n    this.vantagem = 1;\n  }\n}","map":null,"metadata":{},"sourceType":"module"}
