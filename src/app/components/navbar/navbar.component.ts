@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit, Renderer2, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { InvService } from 'src/app/services/inv.service';
 
@@ -15,7 +15,8 @@ export class NavbarComponent implements OnInit {
   senha: string = "";
 
   constructor(private modalService: BsModalService,
-              private service: InvService
+              private service: InvService,
+              private renderer: Renderer2
   ) { }
 
   ngOnInit(): void {
@@ -33,6 +34,7 @@ export class NavbarComponent implements OnInit {
         this.source = "../../../assets/imgs/logoHumblewood.png";
         break;
     }
+    this.setBackground();
   }
 
   openModal(template: TemplateRef<any>) {
@@ -83,6 +85,12 @@ export class NavbarComponent implements OnInit {
     }
     this.decline();
     window.location.reload();
+  }
+
+  setBackground() {
+    this.renderer.setStyle(document.body, 'background-image', this.campanha == "HW" ? 'url(assets/imgs/fundoHW.jfif)' : "url(assets/imgs/fundo.jpg)");
+    //this.renderer.setStyle(document.body, 'background-image', "url(assets/imgs/fundoHW.jfif)");
+    this.renderer.setStyle(document.body, 'background-size', '100% 100%'); // Optional: ensure it covers the whole screen
   }
 
 }
