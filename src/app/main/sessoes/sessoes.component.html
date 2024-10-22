@@ -1835,7 +1835,8 @@
       <ng-container *ngIf="!isEdit">
         <accordion-group *ngFor="let item of info.sessoes">
           <div accordion-heading class="header"> {{item.titulo}}</div>
-          <p>{{item.descricao}}</p>
+          <div [innerHTML]="item.descricao"></div>
+          <!-- <p>{{item.descricao}}</p> -->
         </accordion-group>
       </ng-container>
       <ng-container *ngIf="isEdit">
