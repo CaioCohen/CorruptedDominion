@@ -1,5 +1,6 @@
-[{
-	"nome": "Corrupted Domain",
+[
+  {
+    "nome": "Corrupted Domain",
     "info": {
         "descricao": "Um grupo de aventureiros acaba de se inscrever na guilda, mas durante sua primeira missão eles acabam encontrando o resquício do sentido divino de um Deus. Por quê aquele Deus estava ali? O que aconteceu com ele? O que será que os jogadores receberam como a benção divina dele?",
         "linkGrid": "https://www.owlbear.rodeo/room/X7f7vCYSX91c/TheSunkSway",
@@ -358,10 +359,10 @@
                 "urlImagem": "https://github.com/CaioCohen/CorruptedDominion/blob/main/src/assets/imgs/npcs/Olmthu.png?raw=true"
             }
         ]
-    },
-},
-{
-	"nome": "Primordial",
+    }
+  },
+  {
+    "nome": "Primordial",
     "info": {
         "descricao": "Um grupo de aventureiros acaba de se inscrever na guilda, mas durante sua primeira missão eles acabam encontrando o resquício do sentido divino de um Deus. Por quê aquele Deus estava ali? O que aconteceu com ele? O que será que os jogadores receberam como a benção divina dele?",
         "linkGrid": "https://www.owlbear.rodeo/room/X7f7vCYSX91c/TheSunkSway",
@@ -778,10 +779,10 @@
                 "urlImagem": "https://github.com/CaioCohen/CorruptedDominion/blob/main/src/assets/imgs/npcs/Hrolduf.png?raw=true"
             }
         ]
-    },
+    }
   },
-  {  
-	"nome": "Humblewood",
+  {
+    "nome": "Humblewood",
     "info": {
         "descricao": "A terra abaixo de Leya estava anormalmente quente. Ela se abaixou para confirmar e se afastou imediatamente com dor. Suas penas estavam levemente queimadas. A estação tinha sido anormalmente seca, mas esta era uma temperatura assustadora. Depois de olhar mais de perto, parecia que o chão estava brilhando.\n\nCRACK! Os olhos de Leya foram para o som. A grande árvore em que ela brincava quando criança havia caído, e fumaça subia de seus restos. \"Vá!\" sua mente gritou, e ela escutou, correndo em direção a casa. \"Chegue até eles antes-\"\n\nDe repente, chamas irromperam, viajando a uma velocidade sobrenatural em direção ao poleiro de Leya. Seu poleiro significava o mundo para ela, mas na vasta extensão da Floresta era pequeno e sem importância. Insignificante demais para ter um posto avançado da Guarda do Perch próprio. Seu coração apertou sabendo que o assentamento remoto não seria avisado a tempo, e que a ajuda não estaria por perto.\n\nAs mãos de Leya começaram a se mover sem pensar enquanto ela sussurrava as palavras de sua avó. Não seria o suficiente, mas ela não conseguiria viver consigo mesma se não tentasse. Quando ensinado a ela, o feitiço tinha a intenção de ajudar as fazendas em estações sem chuva. Não era para ser usado defensivamente. Gotas de uma causa perdida se formaram entre seus dedos.\n\nÁgua conjurada caiu no chão, evaporando assim que atingiu o chão fumegante da floresta. Enquanto ela se concentrava, uma forte rajada quente tocou o rosto de Leya. É Altus, deve ser!, pensou Leya. O Amaranthine das tempestades estava trazendo chuva para apagar esse odioso incêndio florestal. Ela olhou para o céu, procurando freneticamente por mais sinais de mudança no clima.\n\nMal conseguindo registrar o que viu, seus braços caíram para os lados em derrota. Bolas de fogo voadoras enchiam o céu. Um enxame se separou, indo em sua direção. Leya caiu de joelhos, esperando com seus últimos pensamentos que alguém salvasse Humblewood antes que tudo queimasse.\n\nHouve sinais perturbadores nos últimos meses, sinalizando que algo está errado em Humblewood. Os problemas parecem ter origem na atividade no Bosque Queimado, uma planície cinzenta que foi devastada há muitos séculos por um incêndio destrutivo. O que quer que tenha causado o fogo marcou a terra com magia elemental, tornando-a inóspita para todos, exceto para estranhas criaturas de fogo. Ultimamente, o fogo começou a se expandir. No início, era difícil notar a expansão lenta, mas aqueles em sintonia com a natureza podiam ver o desequilíbrio nas forças elementais de Humblewood. Para muitas pessoas comuns, esse desequilíbrio foi vivenciado como uma seca fora de época, o que levou à quebra de safra e a um aumento na frequência de incêndios florestais. Também houve uma série de nuvens de emberbats anormalmente agressivas relatadas muito além de seus limites naturais.\n\nA verdadeira natureza do perigo ainda permanece oculta do povo da Floresta. O aumento do alcance dos enxames de emberbats trouxe incêndios que expandiram o Bosque. Muitos moradores da floresta, que ficaram sem lar, se voltaram para o banditismo para sobreviver.",
         "linkGrid": "https://www.owlbear.rodeo/room/EgMpUjDL7Qy6/TheCalmQuid",
