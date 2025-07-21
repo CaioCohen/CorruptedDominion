@@ -2,6 +2,7 @@
     "corruptedDomain": {
         "descricao": "Um grupo de aventureiros acaba de se inscrever na guilda, mas durante sua primeira missão eles acabam encontrando o resquício do sentido divino de um Deus. Por quê aquele Deus estava ali? O que aconteceu com ele? O que será que os jogadores receberam como a benção divina dele?",
         "linkGrid": "https://www.owlbear.rodeo/room/X7f7vCYSX91c/TheSunkSway",
+        "urlImage": "https://github.com/CaioCohen/CorruptedDominion/blob/main/src/assets/imgs/corruptedDomain.png?raw=true",
         "sessoes": [{
                 "titulo": "1° sessão 25/04",
                 "descricao": "Um novo grupo de aventureiros é formado, composto por um clerigo Sid, um paladino Jorgus, uma feiticeira Yulia e\n        um bruxo Drezig. Eles conheceram a cidade, se armaram e foram salvar a lavoura da vila Bonio que vinha\n        constantemente sendo atacada por 3 goblins. Após lidarem com os goblins, eles pegaram os fertilizantes que\n        prometeram pro demonio da forja e começaram sua viagem de volta pra capital. Durante a viagem, eles foram\n        enfeitiçados pelo resquicio do sentido divino de um Deus ja morto. Esse Deus explica pra eles que o mundo do\n        jeito\n        que eles conhecem está prestes a mudar e concede a eles um orbe divino que carrega uma benção dele, alegando que\n        essa é a forma dele de continuar lutando, após isso o grupo de aventureiros cai desmaiado no chão."
@@ -360,6 +361,8 @@
     "primordial": {
         "descricao": "Um grupo de aventureiros acaba de se inscrever na guilda, mas durante sua primeira missão eles acabam encontrando o resquício do sentido divino de um Deus. Por quê aquele Deus estava ali? O que aconteceu com ele? O que será que os jogadores receberam como a benção divina dele?",
         "linkGrid": "https://www.owlbear.rodeo/room/X7f7vCYSX91c/TheSunkSway",
+        "urlImage": "https://github.com/CaioCohen/CorruptedDominion/blob/main/src/assets/imgs/Primordial.png?raw=true",
+
         "sessoes": [{
                 "titulo": "1° sessão 22/01",
                 "descricao": "Kodiak, o Deus da madeira e da natureza aparece e explica pro grupo sobre osPlanos\n            e o Chaos primordial\nÉ revelado pro grupo que há um amuleto na Fey Wild que pode reverter esse problema, por isso, eles embarcam\n          em uma aventura para a Fey Wild.\nNa Fey Wild eles primeiro encontram um jovem pescando, mas sem sucesso, seu nome é Flam, só se sabe que ele\n          também não é desse plano, mas quando soldados estavam por perto, ele desapareceu.\nO grupo interage com os soldados e eles descobrem que são soldados da princesa da Corte da Primavera, e\n          atualmente a corte da primavera está passando por uma corrida ao trono.\nO grupo faz um acordo com a princesa, eles iriam ajudá-la a ascender ao trono, em troca, ela pagará pela\n          informação da localização do amuleto visto no desenho do Demonio da Forja.\nA primeira missão deles é escoltar um grupo de mineradores para o Desejo Mistico, se eles conseguirem\n          retornar os mineradores com segurança, então a princesa confiará neles."
@@ -791,6 +794,8 @@
 
         A verdadeira natureza do perigo ainda permanece oculta do povo da Floresta. O aumento do alcance dos enxames de emberbats trouxe incêndios que expandiram o Bosque. Muitos moradores da floresta, que ficaram sem lar, se voltaram para o banditismo para sobreviver.",
         "linkGrid": "https://www.owlbear.rodeo/room/EgMpUjDL7Qy6/TheCalmQuid",
+        "urlImage": "https://github.com/CaioCohen/CorruptedDominion/blob/main/src/assets/imgs/Humblewood.png?raw=true",
+
         "lores": [{
                 "descricao": "ainda não tem",
                 "titulo": "Primeira Lore"
